@@ -1,13 +1,13 @@
 # String-Operations-using-User-Defined-Functions
 A C program to implement following  operations on string using user-defined functions: Comparison of Two Strings, Copying One String into Another, Finding the String Length, Concatenating Two Strings into One.
 
-#include<stdio.h>
-int StringCopy(char* a,char* b);
-int StringLength(char* a);
-int StringCompare(char* a, char* b);
-int concatenate(char* str1, char* str2);
-int main()
-{
+    #include<stdio.h>
+    int StringCopy(char* a,char* b);
+    int StringLength(char* a);
+    int StringCompare(char* a, char* b);
+    int concatenate(char* str1, char* str2);
+    int main()
+    {
     char string[20];
     printf("Enter the string:\n");
     scanf("%s",&string);
@@ -45,18 +45,18 @@ int main()
     printf("The concatenated string is: %s",str1);
        
     return 0;
-}
-int StringLength(char* a)
-{
+    }
+    int StringLength(char* a)
+    {
     int i=0;
     while(a[i]!='\0')
     {
         i++;
     }
     return i;
-}
-int StringCopy(char* a,char* b)
-{
+    }
+    int StringCopy(char* a,char* b)
+    {
     int i=0,j=0;
     while(a[i]!='\0')
     {
@@ -65,8 +65,9 @@ int StringCopy(char* a,char* b)
     j++;
     }
     
-}
-int StringCompare(char* a, char* b) {
+    }
+    int StringCompare(char* a, char* b)
+    {
     int i = 0;
     while (a[i] != '\0' && b[i] != '\0') {
          if ((int)a[i] != (int)b[i]) {
@@ -79,8 +80,8 @@ int StringCompare(char* a, char* b) {
     } else {
         return 0; 
     }
-}
-int concatenate(char* str1, char* str2) {
+    }
+    int concatenate(char* str1, char* str2) {
     int i = 0, j = 0;
     while (str1[i] != '\0') i++;
     while (str2[j] != '\0') {
@@ -88,5 +89,5 @@ int concatenate(char* str1, char* str2) {
         i++; j++;
     }
     str1[i] = '\0';
-}
+    }
 
